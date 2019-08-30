@@ -1,5 +1,7 @@
+/* Fontes */
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
 
+/* Efeitos e Animações */
 .parallax {
 
   background-image: url("Images/parallax.gif");
@@ -32,19 +34,6 @@
   }
 }
 
-h1, h2, p, b, span {
-	color: #ffffff;
-  font-family: 'Bitter', serif;
-}
-
-p.desc {
-  padding-top: 10px;
-  padding-left: 50px;
-  text-align: justify;
-  line-height: 25px;
-}
-
-
 img {
   transition: ease-in-out 0.2s;
 }
@@ -58,7 +47,6 @@ span {
   font-size: 25px;
   font-weight: bold;
 }
-
 
 .fade span {
   position: absolute;
@@ -82,4 +70,67 @@ span {
   opacity: 0;
 }
 
+/* Tags e Classes */
+h1, h2, p, b, span {
+  color: #ffffff;
+  font-family: 'Bitter', serif;
+}
 
+h2 {padding-left: 300px;}
+
+b {padding-left: 100px;}
+
+p.desc {
+  padding-top: 10px;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-align: justify;
+  line-height: 25px;
+}
+
+iframe {
+  height: 315px;
+  width: 560px;
+}
+
+[class*="coluna-"] {
+  width: 45%;
+  float: left;
+}
+
+.coluna-imagem {text-align: right;}
+
+.coluna-texto {}
+
+/* Responsive Web */
+@media only screen and (max-width: 600px) {
+  [class*="coluna"] {
+    width: 100%;
+  }
+
+  [class*="coluna-imagem"] {
+    text-align: center;
+  }
+
+  [class*="desc"] {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  h2 {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  span {
+    font-size: 27.5px;
+  }
+
+  p, b {
+    font-size: 22.5px;
+  }
+
+  iframe {
+    width: 95%;
+  }
+}
