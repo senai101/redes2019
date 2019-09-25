@@ -1,5 +1,6 @@
 /* Fontes */
 @import url('https://fonts.googleapis.com/css?family=Bitter&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Arvo&display=swap');
 
 /* Efeitos e Animações */
 .parallax {
@@ -71,9 +72,14 @@ span {
 }
 
 /* Tags e Classes */
-h1, h2, p, b, span {
+h2, p, b, span {
   color: #ffffff;
   font-family: 'Bitter', serif;
+}
+
+h1 {
+  color: #ffffff;
+  font-family: 'Arvo', serif;
 }
 
 h2 {padding-left: 300px;}
